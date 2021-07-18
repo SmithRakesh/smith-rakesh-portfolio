@@ -28,7 +28,7 @@ const Navbar = () => {
     ]
     return (
         <Container>
-            <div>Smith's Portfolio</div>
+            <NavLink exact to="/">Smith's Portfolio</NavLink>
             {
                 links.map(({to,title,exact}) => <LinkContainer><NavLink exact={exact} to={to}>{title}</NavLink></LinkContainer>)
             }
@@ -46,6 +46,7 @@ padding: 10px 30px;
         font-weight: bold;
         font-size: 22px;
         color:white;
+        text-decoration:none;
     }
     align-items: center;
     justify-content: space-between;

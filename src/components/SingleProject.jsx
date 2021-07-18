@@ -27,7 +27,7 @@ const SingleProject = ({src,title,info,url,logo}) => {
 export default SingleProject
 
 const Container = styled.div`
-    width:32vw;
+    min-width:32vw;
     display: flex;
     flex-direction: column;
     align-items: center;

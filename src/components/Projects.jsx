@@ -20,9 +20,9 @@ const Projects = () => {
              <Box className={styles.box} >
                  <h1>Projects</h1>
                 <Container>
-                    <Grid container>
+                    <Grid container spacing={4}>
                         {
-                            projectInfo?.map(project => <Grid key={project.url} item xs={12} sm={12} md={6} l={6} xl={6}><SingleProject {...project}/> </Grid>)
+                            projectInfo?.map(project => <Grid key={project.url}  item xs={12} sm={12} md={6} l={6} xl={6}><SingleProject {...project}/> </Grid>)
                         }
                     </Grid>
                 </Container>
